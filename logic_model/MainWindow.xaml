@@ -6,7 +6,9 @@
         xmlns:local="clr-namespace:logic_model"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+    <Grid Name="Big_grid">
+        <Label x:Name="label" Content="Загадайте одно из животных&#xD;&#xA;Райская птица, ёжик, кошка, собака, попугай, тирекс, мышь, воробей, пеликан, единорог" HorizontalAlignment="Left" Margin="10,29,0,0" VerticalAlignment="Top" Width="471"/>
+        <Button x:Name="button" Content="Начать" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" Width="148" Height="35" Click="button_Click"/>
+       
     </Grid>
 </Window>
