@@ -24,10 +24,8 @@ namespace logic_model
         {
             InitializeComponent();
         }
-        
+
         public string rezult;
-
-
         public Button yes = new Button();
         public Button no = new Button();
         public bool flag=false;
@@ -56,13 +54,11 @@ namespace logic_model
             {
                 this.Close();
                 
-
             }
 
         }
         private void yes_click(object sender, RoutedEventArgs e)
         {
-            flag = true;
             rezult += "1";
             if (rezult == "1") 
             {
@@ -83,8 +79,6 @@ namespace logic_model
                 button.Visibility = Visibility.Visible;
                 flag = true;
                               
-                
-
             }
             if(rezult=="101")
             {
@@ -104,7 +98,7 @@ namespace logic_model
             }
             if(rezult=="0011")
             {
-                label.Content = "Это йожик";
+                label.Content = "Это ёж";
                 yes.Visibility = Visibility.Hidden;
                 no.Visibility = Visibility.Hidden;
                 Big_grid.Children.Remove(yes);
@@ -145,9 +139,9 @@ namespace logic_model
             }
         }
             
-          
         private void no_click(object sender, RoutedEventArgs e)
         {
+            flag = true;
             rezult += "0";
             if (rezult == "0")
             {
@@ -225,10 +219,7 @@ namespace logic_model
 
             }
             
-            
-            
         }
-        
 
     }
 
